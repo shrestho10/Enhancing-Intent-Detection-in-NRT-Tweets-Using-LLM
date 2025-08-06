@@ -84,3 +84,36 @@ compared to earlier setups.
 ## 📁 Repository Structure
 
 ```bash
+
+Enhancing-Intent-Detection-in-NRT-Tweets-Using-LLM
+├── 📁 all_Data+LLM Finetune
+│ ├── Final_Data_Processing-all-data.ipynb – Preprocessing on all available data
+│ ├── finetune.py – Fine-tuning the LLM on the full dataset
+│ └── output_log.log – Log file for model training and evaluation
+│
+├── 📁 data_downsample + error correction + LLM Finetune
+│ ├── finetune.py – Fine-tuning after downsampling and correcting label errors
+│ └── output_train.log – Log for final fine-tuning stage
+│
+├── 📁 data_downsample_version+ LLM Finetune
+│ ├── Final_Data_Processing.ipynb – Preprocessing with downsampled data
+│ ├── finetune.py – Fine-tuning on downsampled data
+│ └── output_log.log – Log of training
+│
+└── 📁 zeroShot
+├── Final_Data_Processing.ipynb – Input preparation for zero-shot predictions
+├── predictions_by_llm.py – Zero-shot predictions using base LLM
+└── Scores.ipynb – Evaluation and score computation
+
+```
+
+---
+
+### 🧾 Explanation
+
+- **`all_Data+LLM Finetune/`**: This folder contains scripts and logs for fine-tuning the LLM on the complete dataset without handling imbalance.
+- **`data_downsample_version+ LLM Finetune/`**: This folder introduces downsampling of the majority class before training the LLM.
+- **`data_downsample + error correction + LLM Finetune/`**: Final stage where data was cleaned, errors corrected, and then used for fine-tuning. This achieved the best results.
+- **`zeroShot/`**: Used to test the zero-shot performance of a pre-trained LLM without any fine-tuning, providing a baseline for comparison.
+
+---
