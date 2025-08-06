@@ -1,0 +1,35 @@
+Classification Report:
+                     precision    recall  f1-score   support
+
+           cigsmell       0.91      0.88      0.89        76
+           cravings       0.85      0.83      0.84       302
+              ecigs       0.95      0.95      0.95        77
+               fail       0.86      0.81      0.84       162
+          greetings       0.90      0.93      0.92       460
+             health       0.94      0.84      0.89       285
+         noresponse       0.76      0.69      0.72       230
+      nrt_don'twork       0.80      0.81      0.80        53
+         nrt_dreams       0.86      0.91      0.89        56
+       nrt_howtouse       0.84      0.82      0.83       104
+        nrt_itworks       0.79      0.82      0.81       136
+nrt_mouthirritation       0.88      0.88      0.88        26
+       nrt_nauseous       0.67      0.87      0.75        23
+             nrt_od       0.82      0.75      0.78        24
+ nrt_skinirritation       0.84      0.89      0.86        35
+     nrt_stickissue       0.88      0.93      0.91        90
+           quitdate       0.91      0.88      0.90       334
+        savingmoney       0.86      0.92      0.89       101
+             scared       0.85      0.79      0.82        81
+          smokefree       0.87      0.93      0.90       813
+        smokingless       0.80      0.88      0.83        40
+             stress       0.92      0.83      0.87       150
+            support       0.94      0.94      0.94      1911
+          tiredness       0.84      0.80      0.82        46
+         weightgain       0.91      0.89      0.90       171
+
+           accuracy                           0.89      5786
+          macro avg       0.86      0.86      0.86      5786
+       weighted avg       0.89      0.89      0.89      5786
+
+Balanced Accuracy Score: 0.8598778375166887
+Accuracy Score: 0.8945731075008642
